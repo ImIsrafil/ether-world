@@ -1,0 +1,119 @@
+.homeBanner {
+    width: 100%;
+    height: 650px;
+    background-image: url('../../../images/homeBanner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -100;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.heroContent {
+    max-width: 500px;
+    z-index: 300;
+}
+.heroContent h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
+}
+.heroContent h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+}
+.heroContent::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background-color: rgba(0, 0, 0, 0.279);
+}
+
+.background {
+    position: absolute;
+    height: 400px;
+    transform: skewY(10deg);
+    transform-origin: left;
+    z-index: -5;
+    width: 600px;
+    background: linear-gradient(to right, hsla(231, 100%, 56%, 0.589) 0%, #2d09ac 100%);
+    animation-name: FadeInAndSkew;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+.background1 {
+    content: '';
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    background-image: url('../../../images/softwareEngineers.jpg');
+    background-size: cover;
+    right: 100px;
+    border-radius: 20px;
+    box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.7);
+}
+.background1::after {
+    content: '';
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(to right, hsla(231, 100%, 56%, 0.589) 0%, #2d09ac 100%);
+    position: absolute;
+    transform: translateY(70px);
+    transform-origin: right;
+    z-index: -100;
+    animation: FadeIn 1.5s ease;
+}
+
+.btn.btn-hero {
+    padding: 0.1rem;
+    padding: 1.5rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+        transform: translateY(-50px);
+        
+    } 
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+        transform: translateY(70px);
+    }
+}
+@keyframes FadeInAndSkew {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+        transform: skewY(0deg);
+        
+    } 
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+        transform: skewY(10deg);
+    }
+}
+
+@keyframes FadeInDrop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

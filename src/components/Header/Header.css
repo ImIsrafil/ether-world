@@ -1,0 +1,37 @@
+.header {
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header a{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.header .logo {
+    font-size: 2.3rem;
+    font-weight: 600;
+    background: -webkit-linear-gradient(rgb(74, 66, 116), rgb(76, 4, 243));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header nav a {
+    padding: 0.5rem 0.5rem;
+    margin-left: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    background: -webkit-linear-gradient(rgb(7, 6, 20), rgb(37, 26, 94), rgb(23, 2, 73));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,110 @@
+.showcase {
+    background-color: #221833;
+    background-image: url('../../../images/background1.png');
+    background-size: 300px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.mainShowcase {
+    max-width: 1200px;
+    margin: auto;
+    transform: translateY(100px);
+}
+
+.mainShowcase .top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+.mainShowcase .top div {
+    width: 49%;
+    text-align: left;
+}
+.mainShowcase .top .left h5{
+    font-size: 2rem;
+    color: white;
+}
+.mainShowcase .top .left p {
+    font-size: 0.921rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    font-weight: 500;
+    color: rgb(61, 61, 255);
+    
+}
+.mainShowcase .top .right {
+    font-size: 0.89rem;
+    letter-spacing: 1.5px;
+    color: rgb(240, 240, 240);
+}
+
+.mainShowcase .bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.showcaseCard img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.showcaseCard:hover {
+    transform: scale(1.02);
+} 
+.showcaseCard {
+    height: 230px;
+    object-fit: cover;
+    position: relative;
+    transition: all 0.5s;
+    box-shadow: -5px 7px 15px rgba(0, 0, 0, 0.8);
+}
+.show {
+    width: 75%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    margin-top: -30px;
+    position: absolute;
+    z-index: 100;
+    height: 50px;
+    overflow: hidden;
+    background: linear-gradient(to left, hsla(231, 94%, 42%, 0.76) 0%, #220392 100%);
+    box-shadow: -5px 5px 5px hsla(231, 94%, 42%, 0.76);
+    transition: 0.4s;
+}
+.showContent {
+    transition: transform 0.5s;
+    text-align: left;
+}
+.showContent span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: gold;
+    
+}
+.show:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+.show:hover .showContent {
+    transform: translateY(-25px);
+}
+
+.showContent h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    color: rgba(205, 237, 255, 0.884);
+}
+.showContent a {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
